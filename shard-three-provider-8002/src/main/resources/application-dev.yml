@@ -1,0 +1,104 @@
+# Eureka注册中心配置
+eureka:
+  instance:
+    hostname: shard-provider02.com
+    prefer-ip-address: true
+  client:
+    service-url:
+      # 注册中心
+      defaultZone: http://shard-regist.com:7001/eureka/
+
+# 多数据源配置
+spring:
+  datasource:
+    # 数据源：shard_one,基础库
+    dataOne:
+      type: com.alibaba.druid.pool.DruidDataSource
+      druid:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/shard_one?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false
+        username: root
+        password: 123
+        initial-size: 10
+        max-active: 100
+        min-idle: 10
+        max-wait: 60000
+        pool-prepared-statements: true
+        max-pool-prepared-statement-per-connection-size: 20
+        time-between-eviction-runs-millis: 60000
+        min-evictable-idle-time-millis: 300000
+        max-evictable-idle-time-millis: 60000
+        validation-query: SELECT 1 FROM DUAL
+        # validation-query-timeout: 5000
+        test-on-borrow: false
+        test-on-return: false
+        test-while-idle: true
+        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    # 数据源：shard_two
+    dataTwo:
+      type: com.alibaba.druid.pool.DruidDataSource
+      druid:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/shard_two?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false
+        username: root
+        password: 123
+        initial-size: 10
+        max-active: 100
+        min-idle: 10
+        max-wait: 60000
+        pool-prepared-statements: true
+        max-pool-prepared-statement-per-connection-size: 20
+        time-between-eviction-runs-millis: 60000
+        min-evictable-idle-time-millis: 300000
+        max-evictable-idle-time-millis: 60000
+        validation-query: SELECT 1 FROM DUAL
+        # validation-query-timeout: 5000
+        test-on-borrow: false
+        test-on-return: false
+        test-while-idle: true
+        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    # 数据源：shard_three
+    dataThree:
+      type: com.alibaba.druid.pool.DruidDataSource
+      druid:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/shard_three?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false
+        username: root
+        password: 123
+        initial-size: 10
+        max-active: 100
+        min-idle: 10
+        max-wait: 60000
+        pool-prepared-statements: true
+        max-pool-prepared-statement-per-connection-size: 20
+        time-between-eviction-runs-millis: 60000
+        min-evictable-idle-time-millis: 300000
+        max-evictable-idle-time-millis: 60000
+        validation-query: SELECT 1 FROM DUAL
+        # validation-query-timeout: 5000
+        test-on-borrow: false
+        test-on-return: false
+        test-while-idle: true
+        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    dataFour:
+      type: com.alibaba.druid.pool.DruidDataSource
+      druid:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/shard_four?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false
+        username: root
+        password: 123
+        initial-size: 10
+        max-active: 100
+        min-idle: 10
+        max-wait: 60000
+        pool-prepared-statements: true
+        max-pool-prepared-statement-per-connection-size: 20
+        time-between-eviction-runs-millis: 60000
+        min-evictable-idle-time-millis: 300000
+        max-evictable-idle-time-millis: 60000
+        validation-query: SELECT 1 FROM DUAL
+        # validation-query-timeout: 5000
+        test-on-borrow: false
+        test-on-return: false
+        test-while-idle: true
+        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000

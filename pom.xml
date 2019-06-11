@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cloud.shard.jdbc</groupId>
+    <artifactId>cloud-shard-jdbc</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <!-- 公共代码块 -->
+        <module>shard-common-entity</module>
+        <!-- 开放接口管理 -->
+        <module>shard-open-inte</module>
+        <!-- 注册中心 -->
+        <module>shard-eureka-7001</module>
+        <!-- 8001 基于两台库的服务 -->
+        <module>shard-two-provider-8001</module>
+        <!-- 8002 基于三台库的服务 -->
+        <module>shard-three-provider-8002</module>
+    </modules>
+
+    <!-- 依赖版本管理 -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <!-- 基础框架 -->
+        <spring.cloud.version>Edgware.SR3</spring.cloud.version>
+        <bom.version>Brussels-SR10</bom.version>
+        <spring-boot.version>2.1.3.RELEASE</spring-boot.version>
+        <spring.version>5.1.5.RELEASE</spring.version>
+        <mybatisplus.version>3.0.7.1</mybatisplus.version>
+        <mysql.version>5.1.38</mysql.version>
+        <mssql.version>4.0</mssql.version>
+        <druid.version>1.1.13</druid.version>
+        <quartz.version>2.3.0</quartz.version>
+        <commons.lang.version>2.6</commons.lang.version>
+        <commons.fileupload.version>1.2.2</commons.fileupload.version>
+        <commons.io.version>2.5</commons.io.version>
+        <commons.codec.version>1.10</commons.codec.version>
+        <commons.configuration.version>1.10</commons.configuration.version>
+        <swagger.version>2.7.0</swagger.version>
+        <joda.time.version>2.9.9</joda.time.version>
+        <fastjson.version>1.2.47</fastjson.version>
+        <hutool.version>4.1.1</hutool.version>
+        <lombok.version>1.18.4</lombok.version>
+        <pagehelper.version>1.2.5</pagehelper.version>
+        <common-util.version>1.0.3</common-util.version>
+        <commons-lang3.version>3.8.1</commons-lang3.version>
+        <rocketmq.version>4.3.0</rocketmq.version>
+        <shard-jdbc.version>3.1.0</shard-jdbc.version>
+        <redis-client.version>2.9.1</redis-client.version>
+    </properties>
+
+    <!-- 依赖管理 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Jar包 版本号自动管理 -->
+            <dependency>
+                <groupId>io.spring.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>${bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- 基础框架 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- 项目构建插件 -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

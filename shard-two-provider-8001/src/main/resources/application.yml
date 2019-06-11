@@ -1,0 +1,17 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8001
+
+spring:
+  application:
+    name: shard-provider-8001
+  profiles:
+    active: dev
+
+# mybatis
+mybatis:
+  mapper-locations: classpath*:/mybatis/mapper/**/*.xml

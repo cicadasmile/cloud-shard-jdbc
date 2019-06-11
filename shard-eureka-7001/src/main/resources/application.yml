@@ -1,0 +1,17 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: shard-eureka-7001
+eureka:
+  instance:
+    hostname: shard-regist.com
+    prefer-ip-address: true
+  client:
+    # false表示不向注册中心注册自己
+    register-with-eureka: false
+    # false表示该端就是注册中心，维护服务实例，不去检索服务
+    fetch-registry: false
+    service-url:
+      # 单点注册中心
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
