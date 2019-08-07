@@ -11,7 +11,7 @@
 基于SpringCloud实现Shard-Jdbc的分库分表模式，数据库扩容方案
 
 ## 关于作者
-关注公众号：知了一笑<br/>
+【<b>公众号：知了一笑</b>】    【<b><a href="https://www.zhihu.com/people/cicadasmile/columns">知乎专栏</a></b>】<br/>
 <img width="255px" height="255px" src="https://avatars0.githubusercontent.com/u/50793885?s=460&v=4"/><br/>
 
 ## 项目推荐
