@@ -1,8 +1,19 @@
 ## 参考文章
 
-1、[SpringBoot2 整合 shard-jdbc 中间件，实现数据分库分表](https://mp.weixin.qq.com/s?__biz=MzU4Njg0MzYwNw==&mid=2247483713&idx=1&sn=cd4228e19d07e0371af7ef06515f4298&chksm=fdf455f9ca83dcef81c44f10bff15a3d3a29553746eef9cad9d4e2a13c5d5709d95a375bff0a&token=582428657&lang=zh_CN#rd)<br/>
-2、[基于Shard-Jdbc分库分表模式下，数据库扩容方案描述](https://mp.weixin.qq.com/s?__biz=MzU4Njg0MzYwNw==&mid=2247483723&idx=1&sn=4c4c59e13a05b7cf3ea23054d28a3e22&chksm=fdf455f3ca83dce566173d887ee8f274cc154e72c9c1af29cfecc02e3e77220d9f8b1f3b90c4&token=1249750178&lang=zh_CN#rd)<br/>
-3、[基于SpringCloud实现Shard-Jdbc的分库分表模式，数据库扩容方案](https://mp.weixin.qq.com/s?__biz=MzU4Njg0MzYwNw==&mid=2247483732&idx=1&sn=ac0ecd8443ccd7b6f68955023e2291a3&chksm=fdf455ecca83dcfacd2aecc7b6f20deef13ba429f3b0da27159aa67581736a7f492732ae73c8&token=949711998&lang=zh_CN#rd)<br/>
+|序号|文章标题|
+|:---:|:---|
+|01|[微服务基础：Eureka组件，管理服务注册发现](https://mp.weixin.qq.com/s/cbEnCOhgo-5wGFX-GAUQtg)|
+|02|[微服务基础：Ribbon和Feign组件，实现请求负载均衡](https://mp.weixin.qq.com/s/yHCC-MwFtDda_y817CV2XA)|
+|03|[微服务基础：Hystrix组件，实现服务熔断](https://mp.weixin.qq.com/s/pDrda8tBbNfReWVQrzal6w)|
+|04|[微服务基础：Turbine组件，实现微服务集群监控](https://mp.weixin.qq.com/s/-PPL5jwe4OdoBq7kQwePKA)|
+|05|[微服务基础：Zuul组件，实现路由网关控制](https://mp.weixin.qq.com/s/A7xiIp9EG62_1y-F23TATg)|
+|06|[微服务基础：Config组件，实现配置统一管理](https://mp.weixin.qq.com/s/_WZ1r0Kas5yMMPfwZ4MRUw)|
+|07|[微服务基础：Zipkin组件，实现请求链路追踪](https://mp.weixin.qq.com/s/p3p3Wi72rJngqMz4FSICBQ)|
+|08|[微服务基础：与Dubbo框架、Boot框架对比分析](https://mp.weixin.qq.com/s/RC8F_D1J75XEv7oR7xdK5Q)|
+|09|[微服务基础：Nacos组件，服务和配置管理](https://mp.weixin.qq.com/s/adwfdDGg9DQleYLECA8raQ)|
+|10|[微服务基础：Sentinel组件，服务限流和降级](https://mp.weixin.qq.com/s/L_Q9PyPKngmCx-c94o0UmA)|
+|11|[微服务应用：分库分表模式下，数据库扩容方案](https://mp.weixin.qq.com/s/yCRwHGUd7xzQeEhoXFeO-w)|
+|12|[微服务应用：Shard-Jdbc分库分表，扩容方案实现](https://mp.weixin.qq.com/s/QHF4qFP0JUhmievlj3FQPQ)|
 
 ## 项目简介
 基于SpringCloud实现Shard-Jdbc的分库分表模式，数据库扩容方案
@@ -13,14 +24,12 @@
 
 ## 推荐项目
 
-|项目名称|GitHub地址|GitEE地址|推荐指数|
-|:---|:---|:---|:---|
-|Java描述常用设计模式,算法,数据结构|[GitHub·点这里](https://github.com/cicadasmile/model-arithmetic-parent)|[GitEE·点这里](https://gitee.com/cicadasmile/model-arithmetic-parent)|☆☆☆☆☆|
-|Java基础、进阶、并发、面向对象、Web开发|[GitHub·点这里](https://github.com/cicadasmile/java-base-parent)|[GitEE·点这里](https://gitee.com/cicadasmile/java-base-parent)|☆☆☆☆|
-|SpringCloud微服务架构实战综合案例|[GitHub·点这里](https://github.com/cicadasmile/husky-spring-cloud)|[GitEE·点这里](https://gitee.com/cicadasmile/husky-spring-cloud)|☆☆☆☆☆|
-|SpringCloud微服务基础组件案例详解|[GitHub·点这里](https://github.com/cicadasmile/spring-cloud-base)|[GitEE·点这里](https://gitee.com/cicadasmile/spring-cloud-base)|☆☆☆|
-|SpringCloud实现分库分表模式下数据库实时扩容|[GitHub·点这里](https://github.com/cicadasmile/cloud-shard-jdbc)|[GitEE·点这里](https://gitee.com/cicadasmile/cloud-shard-jdbc)|☆☆☆☆☆|
-|SpringBoot框架基础应用入门到进阶|[GitHub·点这里](https://github.com/cicadasmile/spring-boot-base)|[GitEE·点这里](https://gitee.com/cicadasmile/spring-boot-base)|☆☆☆☆|
-|SpringBoot框架整合开发常用中间件|[GitHub·点这里](https://github.com/cicadasmile/middle-ware-parent)|[GitEE·点这里](https://gitee.com/cicadasmile/middle-ware-parent)|☆☆☆☆☆|
-|Spring+Mvc框架基础案例详解|[GitHub·点这里](https://github.com/cicadasmile/spring-mvc-parent)|[GitEE·点这里](https://gitee.com/cicadasmile/spring-mvc-parent)|☆☆|
-|Linux系统基础、运维,常用操作积累|[GitHub·点这里](https://github.com/cicadasmile/linux-system-base)|[GitEE·点这里](https://gitee.com/cicadasmile/linux-system-base)|☆☆☆|
+|序号|项目名称|GitHub地址|GitEE地址|推荐指数|
+|:---|:---|:---|:---|:---|
+|01|Java描述设计模式,算法,数据结构|[GitHub·点这里](https://github.com/cicadasmile/model-arithmetic-parent)|[GitEE·点这里](https://gitee.com/cicadasmile/model-arithmetic-parent)|☆☆☆☆☆|
+|02|Java基础、并发、面向对象、Web开发|[GitHub·点这里](https://github.com/cicadasmile/java-base-parent)|[GitEE·点这里](https://gitee.com/cicadasmile/java-base-parent)|☆☆☆☆|
+|03|SpringCloud微服务基础组件案例详解|[GitHub·点这里](https://github.com/cicadasmile/spring-cloud-base)|[GitEE·点这里](https://gitee.com/cicadasmile/spring-cloud-base)|☆☆☆|
+|04|SpringCloud微服务架构实战综合案例|[GitHub·点这里](https://github.com/cicadasmile/husky-spring-cloud)|[GitEE·点这里](https://gitee.com/cicadasmile/husky-spring-cloud)|☆☆☆☆☆|
+|05|SpringBoot框架基础应用入门到进阶|[GitHub·点这里](https://github.com/cicadasmile/spring-boot-base)|[GitEE·点这里](https://gitee.com/cicadasmile/spring-boot-base)|☆☆☆☆|
+|06|SpringBoot框架整合开发常用中间件|[GitHub·点这里](https://github.com/cicadasmile/middle-ware-parent)|[GitEE·点这里](https://gitee.com/cicadasmile/middle-ware-parent)|☆☆☆☆☆|
+|07|数据管理、分布式、架构设计基础案例|[GitHub·点这里](https://github.com/cicadasmile/data-manage-parent)|[GitEE·点这里](https://gitee.com/cicadasmile/data-manage-parent)|☆☆☆☆☆|
